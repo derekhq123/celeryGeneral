@@ -1,0 +1,6 @@
+add,"sample0.txt","result0.txt",3
+mul,"sample1.txt","result1.txt",3
+add,"sample2.txt","result2.txt",3
+minus,"sample3.txt","result0.txt",3
+group,0,1
+chain,2,3
