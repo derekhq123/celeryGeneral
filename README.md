@@ -51,8 +51,10 @@ workflow type:
   
   group: functions are run in parallel
 
-eg: group,0,1
-
+eg: 
+    
+    group,0,1
+    
     chain,2,3
     
 (tips: workflow command are set in chain execution in default. Take eg as example, the chain,2,3 command will run after group,0,1
