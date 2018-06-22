@@ -7,6 +7,7 @@ How to use it:
 
 This framework has two parts: server part and job submission part.
 
+
 Server: 
 
 build the framework and start the service.
@@ -22,6 +23,7 @@ and it will run successfully
 (tips: if you want to change the server configuration, please edit celerycongi.py file)
 
 
+
 Job submission:
 
 Users can define function they want to use and the workflow to run these functions
@@ -29,6 +31,7 @@ Users can define function they want to use and the workflow to run these functio
 All functions is defined in celery_server/library.py file
 
 Users can write their command in workflow.txt
+
 
 workflow.txt format:
 
