@@ -5,20 +5,20 @@ Author: Du Li
 
 How to use it:
 
-This framework has two parts: server part and job submission part.
+  This framework has two parts: server part and job submission part.
 
 
 Server: 
 
-build the framework and start the service.
+  build the framework and start the service.
 
-change path to celery_client_combined file
+  change path to celery_client_combined file
 
-open terminal and enter in:
+  open terminal and enter in:
 
-celery -A celery_server worker --loglevel=info -c N (N: number of processers, default value: number of CPU in your computer)
+  celery -A celery_server worker --loglevel=info -c N (N: number of processers, default value: number of CPU in your computer)
 
-and it will run successfully
+  and it will run successfully
 
 (tips: if you want to change the server configuration, please edit celerycongi.py file)
 
@@ -26,22 +26,22 @@ and it will run successfully
 
 Job submission:
 
-Users can define function they want to use and the workflow to run these functions
+  Users can define function they want to use and the workflow to run these functions
 
-All functions is defined in celery_server/library.py file
+  All functions is defined in celery_server/library.py file
 
-Users can write their command in workflow.txt
+  Users can write their command in workflow.txt
 
 
 workflow.txt format:
 
-two types of command: function call and workflow call
+   two types of command: function call and workflow call
 
-one command per line
+  one command per line
 
 function call: function name,parameter
 
-eg :add,sourcefile,targetfile,number
+  eg :add,sourcefile,targetfile,number
 
 workflow call: workflow type, index of function call (starting from 0)
 
